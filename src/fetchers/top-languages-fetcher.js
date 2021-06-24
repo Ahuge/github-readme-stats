@@ -12,7 +12,7 @@ const fetcher = (variables, token) => {
           repositories(ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER], isFork: false, first: 100) {
             nodes {
               name
-              languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+              languages(first: 100, orderBy: {field: SIZE, direction: DESC}) {
                 edges {
                   size
                   node {
